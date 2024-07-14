@@ -1,0 +1,21 @@
+// Approach
+
+class Solution {
+public:
+    int findDuplicate(vector<int>& nums) {
+            unordered_map<int,int> mp;
+            for(int i=0;i<nums.size();i++){
+                mp[nums[i]]++;
+            }   
+            for(auto &it :mp){
+                int k=it.first;
+                if(mp[k]>1){
+                    return k;
+                }
+            }
+            return -1;
+    }
+};
+
+// Time complexity - O(N)
+// Space complexity - O(1)
