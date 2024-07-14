@@ -1,0 +1,13 @@
+// Approach
+
+// Sort the colors
+
+class Solution {
+public:
+    void sortColors(vector<int>& nums) {
+        sort(nums.begin(),nums.end());
+    }
+};
+
+// Time complexity - O(N log N)
+// Space Complexity - O(1)
